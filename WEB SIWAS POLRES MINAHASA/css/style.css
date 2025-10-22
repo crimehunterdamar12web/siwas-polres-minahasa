@@ -1,0 +1,196 @@
+/* Reset dan dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #002147;
+  --secondary: #003366;
+  --gold: #ffd700;
+  --light-blue: #cce6ff;
+  --white: #ffffff;
+  --glass: rgba(0, 0, 51, 0.6);
+  --glass-hover: rgba(0, 0, 51, 0.8);
+  --shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Body */
+body {
+ body {
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('/images/polre-minahasa.jpg'); /* arahkan ke folder gambar */
+  background-size: cover;            /* gambar memenuhi seluruh layar */
+  background-position: center;       /* posisi tengah */
+  background-repeat: no-repeat;      /* tidak diulang */
+  background-attachment: fixed;      /* tetap saat scroll */
+  color: #fff;
+  line-height: 1.6;
+} 
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  padding: 20px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 10px;
+}
+
+.logo-container img {
+  height: 80px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--gold);
+}
+
+header h1 {
+  font-size: 32px;
+  color: var(--gold);
+  text-shadow: 1px 1px 3px #000;
+}
+
+header p {
+  font-size: 16px;
+  color: var(--light-blue);
+}
+
+/* Navigasi */
+nav {
+  background-color: var(--secondary);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 12px;
+  box-shadow: var(--shadow);
+}
+
+nav a {
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+/* Section */
+section {
+  margin: 20px;
+}
+
+/* Accordion Interaktif */
+details {
+  background-color: var(--glass);
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
+  box-shadow: var(--shadow);
+  margin-bottom: 20px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+details[open] {
+  background-color: var(--glass-hover);
+}
+
+summary {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--gold);
+  cursor: pointer;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px #000;
+}
+
+details div {
+  padding-top: 10px;
+  color: var(--light-blue);
+}
+
+ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Formulir */
+form input,
+form textarea,
+form button {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 500px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form input,
+form textarea {
+  background-color: var(--white);
+  color: #000;
+}
+
+form button {
+  background-color: var(--gold);
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #e6b800;
+}
+
+/* Tautan */
+a {
+  color: #99ccff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: var(--secondary);
+  text-align: center;
+  padding: 20px;
+  color: #ccc;
+  box-shadow: var(--shadow);
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .logo-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  section {
+    margin: 10px;
+  }
+}
