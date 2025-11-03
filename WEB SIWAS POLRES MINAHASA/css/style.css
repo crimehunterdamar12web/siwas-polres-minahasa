@@ -17,10 +17,9 @@
 }
 
 /* Body */
-body {
  body {
   font-family: 'Segoe UI', sans-serif;
-  background-image: url('/images/polre-minahasa.jpg'); /* arahkan ke folder gambar */
+  background-image: url('/images/polres-minahasa.jpg'); /* arahkan ke folder gambar */
   background-size: cover;            /* gambar memenuhi seluruh layar */
   background-position: center;       /* posisi tengah */
   background-repeat: no-repeat;      /* tidak diulang */
@@ -193,4 +192,5 @@ footer {
   section {
     margin: 10px;
   }
+
 }
